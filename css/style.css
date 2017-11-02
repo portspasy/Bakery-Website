@@ -346,6 +346,7 @@ nav {
 .navbar-default .navbar-nav>li>a {
 	color: #fff;
 	font-size: 14px;
+	letter-spacing: 0.3em;
 	font-family: 'alegreyaregular';
 	text-transform: uppercase;
 }
@@ -482,6 +483,22 @@ nav {
 	min-height: 760px;
 }
 
+.sandwich .sandwich-left-list img {
+	margin: 0 auto;
+	margin-bottom: 15px;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+.sandwich .sandwich-left-list .s-dsc1 {
+	color: #a47d5e;
+	font-size: 30px;
+    letter-spacing: 0.025em;
+	font-family: 'alegreyabold';
+}
+.sandwich .mt90 {
+	margin-top: 90px;
+}
 /*************************************************
 08. Footer CSS
 *************************************************/
@@ -490,9 +507,18 @@ nav {
 	padding-bottom: 65px;
 }
 .footer .navbar-nav>li>a {
+	color: #56534c;
+	font-size: 14px;
+	letter-spacing: 0.3em;
+	font-family: 'alegreyaregular';
 	text-transform: uppercase;
-	color: #72716e;
 }
+.footer .navbar-nav>li>a:focus, 
+.footer .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color:  #dfc691;
+}
+
 
 /*************************************************
 09. Media Queries CSS
