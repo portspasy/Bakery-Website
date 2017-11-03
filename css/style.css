@@ -268,7 +268,7 @@ body {
 .opacity100{zoom: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);-moz-opacity: 1;-khtml-opacity: 1;  opacity: 1;  }
 
 /*shadow*/
-.drop-shadow-bottom {background-color: #fff;border-color: #fff;-webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.25);-moz-box-shadow:    0 5px 15px rgba(0,0,0,0.25);box-shadow:         0 5px 15px rgba(0,0,0,0.25);z-index: 8;}
+.drop-shadow-bottom {background-color: #fff;border-color: #fff;-webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.25);-moz-box-shadow:    0 5px 15px rgba(0,0,0,0.25);box-shadow:         0 5px 15px rgba(0,0,0,0.25);}
 
 /*Same height Column*/
 .inside-full-background-left{background-color:rgba(25,80,119,0.9)}
@@ -351,7 +351,9 @@ p.general-paragraph {
 02. Navbar CSS
 *************************************************/
 
-nav {}
+nav {
+
+}
 
 .navbar-default {
 	background-color: rgba(86, 83, 76, 0.53);
@@ -375,6 +377,7 @@ nav {}
 	color: #fff;
 	background-color: #dfc691;
 }
+
 
 
 /*************************************************
@@ -402,13 +405,9 @@ nav {}
 	right: 0;
 	bottom: 0;
 	background: -webkit-radial-gradient(circle, #564f4c, transparent, transparent);
-	/* For Safari 5.1 to 6.0 */
 	background: -o-radial-gradient(circle, #564f4c, transparent, transparent);
-	/* For Opera 11.6 to 12.0 */
 	background: -moz-radial-gradient(circle, #564f4c, transparent, transparent);
-	/* For Fx 3.6 to 15 */
 	background: radial-gradient(circle, #564f4c, transparent, transparent);
-	/* Standard syntax (must be last) */
 	opacity: 0.76;
 }
 
@@ -444,9 +443,8 @@ nav {}
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	/*position: relative;*/
+	position: relative;
 	padding: 100px 0 90px;
-	min-height: 760px;
 }
 
 .art-of-cakes .chef-quote p {
@@ -466,9 +464,8 @@ nav {}
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	/*position: relative;*/
-	/*padding: 90px 0 70px;*/
-	min-height: 760px;
+	position: relative;
+	padding: 250px 0;
 }
 
 
@@ -481,10 +478,9 @@ nav {}
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	position: relative;
+	padding: 80px 0;
 	color: #fff;
-	/*position: relative;*/
-	/*padding: 145px 0 110px;*/
-	min-height: 760px;
 }
 
 .breakfast h2.general-head {
@@ -521,9 +517,14 @@ nav {}
 
 .sandwich {
 	background-color: #f3f1e9;
-	min-height: 760px;
+	padding: 80px 0;
 }
-
+.sandwich .sandwich-left-list>li {
+	margin-bottom: 45px;
+}
+.sandwich .sandwich-left-list>li:last-child {
+	margin-bottom: 0;
+}
 .sandwich .sandwich-left-list img {
 	margin: 0 auto;
 	margin-bottom: 15px;
@@ -538,9 +539,20 @@ nav {}
 	letter-spacing: 0.025em;
 	font-family: 'alegreyabold';
 }
+.sandwich .sandwich-left-list .s-dsc2 {
+	color: #56534c;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	font-family: 'proxima_nova_regular';
+}
 
 .sandwich .mt90 {
 	margin-top: 90px;
+}
+.sandwich .s-right-side img {
+	/*border: 1px solid #c1c1c1; */
+    padding: 10px;
+    background-color: #fff;
 }
 
 
